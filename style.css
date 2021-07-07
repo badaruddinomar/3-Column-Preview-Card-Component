@@ -78,6 +78,10 @@ html{
 @media (max-width:1000px) {
     .card-container{
         margin: 4rem 3rem;
+    
+    }
+    .card-container a{
+        padding: .5rem 1rem;
     }
     .card-1{
         border-radius: 5px 5px 0  0;
