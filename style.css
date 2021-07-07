@@ -1,0 +1,99 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+.section-card{
+    padding: 15% 10%;
+    display: flex;
+    grid-gap: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-light-gray);
+    line-height: 1.6;
+}
+.section-card h1{
+    color: var(--Very-light-gray);
+    margin:1rem 0 ;
+    text-transform: uppercase;
+}
+.section-card p{
+    color: var(--Transparent-white);
+    margin-bottom: 3rem;
+}
+.equal-height-col{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-u{
+    height: 100%;
+    padding: 4rem 3rem;
+}
+.card-1{
+    background-color: var(--Bright-orange);
+    border-radius: 5px 0 0 5px;
+}
+.card-1 a{
+    color: var(--Bright-orange);
+}
+.card-2{
+    background-color: var(--Dark-cyan);
+}
+.card-2 a{
+    color: var(--Dark-cyan);
+}
+.card-3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 5px 5px 0;
+}
+.card-3 a{
+    color: var(--Very-dark-cyan);
+}
+.section-card a{
+    text-decoration: none;
+    background-color: var(--Very-light-gray);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.section-card a:hover{
+    background-color: var(--Transparent-white);
+}
+
+@media (max-width:1000px) {
+    .card-container{
+        margin: 4rem 3rem;
+    }
+    .card-1{
+        border-radius: 5px 5px 0  0;
+    }
+    .card-3{
+        border-radius: 0 0 5px 5px;
+    }
+    
+}
+
+/* footer section start from here */
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
